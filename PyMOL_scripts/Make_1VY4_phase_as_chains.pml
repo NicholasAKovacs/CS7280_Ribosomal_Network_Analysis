@@ -150,12 +150,12 @@ extract SSUPhase5_TT, aes11_H33_34_TT or aes7a_h4_15_18_TT or aes12_H6_12_TT or 
 
 extract SSUPhase6_TT, aes17_h13_14_TT or aes14a_h41_TT or aes18_H8_9_TT or aes1b_h44_TT or aes19_h11_TT or aes20_h21_22_23_TT or aes21_H26_26a_TT or aes22_h35_36_38_39_TT or aes23_H37_TT or aes24_h23a_TT or aes25_h40_TT or aes20a_h21_22_23_TT or aes26_h16_17_TT or aes27_H33a_TT
 
-alter SSUPhase1_TT, resi = resi+'$'
-alter SSUPhase2_TT, resi = resi+'$'
-alter SSUPhase3_TT, resi = resi+'$'
-alter SSUPhase4_TT, resi = resi+'$'
-alter SSUPhase5_TT, resi = resi+'$'
-alter SSUPhase6_TT, resi = resi+'$'
+alter SSUPhase1_TT, resi = resi+'-'
+alter SSUPhase2_TT, resi = resi+'-'
+alter SSUPhase3_TT, resi = resi+'-'
+alter SSUPhase4_TT, resi = resi+'-'
+alter SSUPhase5_TT, resi = resi+'-'
+alter SSUPhase6_TT, resi = resi+'-'
 
 extract Phase1, (LSUPhase1_TT or SSUPhase1_TT)
 extract Phase2, (LSUPhase2_TT or SSUPhase2_TT)
@@ -252,4 +252,4 @@ disable *Phase*
 disable *ion*
 disable 1vy4
 
-#cmd.save('1VY4_phase_as_chains.pdb', 'enabled')
+cmd.save('1VY4_phase_as_chains.pdb', 'enabled')
